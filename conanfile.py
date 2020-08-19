@@ -66,4 +66,4 @@ list(TRANSFORM NAMESPACED_CONAN_DEPENDENCIES PREPEND "CONAN_PKG::")
         self.copy("*.a", dst="lib", keep_path=False)
 
     def package_info(self):
-        self.cpp_info.libs = ["UHEMesh_core"]
+        self.cpp_info.libs = []
