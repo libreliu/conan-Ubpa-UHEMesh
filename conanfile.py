@@ -14,7 +14,7 @@ class UHEMesh(ConanFile):
     requires = "UContainer/0.0.6"
 
     def source(self):
-        self.run("git clone https://github.com/Ubpa/UHEMesh.git")
+        self.run("git clone https://github.com/Ubpa/UHEMesh.git --branch 0.4.2 --depth 1")
 
         # TODO: find a elegent way of copying
         content = tools.load("patches/UbpaEssential.cmake")
